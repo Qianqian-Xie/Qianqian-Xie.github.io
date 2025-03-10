@@ -28,7 +28,7 @@ latest_posts:
 
 Email: xqq.sincere [at] gmail.com
 
-I am a Professor at Wuhan University, School of Artificial Intelligence. I completed my Ph.D. in Computer Software and Theory at Wuhan University and my Bachelor's degree in Computer Science and Technology from Jiangxi Normal University. Before joining Wuhan University as a faculty member, I was a Postdoctoral Researcher at Yale University School of Medicine and Weill Cornell Medical College, and an Assistant Researcher at the University of Manchester.
+I will join Wuhan University, School of Artificial Intelligence as a full professor in May, 2025. I completed my Ph.D. in Computer Software and Theory at Wuhan University and my Bachelor's degree in Computer Science and Technology from Jiangxi Normal University. Before joining Wuhan University as a faculty member, I was a Postdoctoral Researcher at Yale University School of Medicine and Weill Cornell Medical College, and an Assistant Researcher at the University of Manchester.
 
 My research focuses on Natural Language Processing (NLP), with an emphasis on **Large Language Models (LLMs), intelligent healthcare, and intelligent finance**. I am interested in efficient training, domain adaptation, explainability, and the robustness of LLMs in specialized applications. Specifically, my work spans across:
 
