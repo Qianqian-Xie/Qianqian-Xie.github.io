@@ -1,8 +1,7 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2024-08-30 15:59:00-0400
 inline: true
 related_posts: false
 ---
-
-A simple inline announcement.
+I was awarded the <a href='https://medicine.yale.edu/ybic/news-article/advancing-clinical-decision-support-with-reliable-transparent-large-language-models/'>NIH Pathway to Independence Award (k99/R00)</a>
