@@ -35,5 +35,5 @@ My research focuses on Natural Language Processing (NLP) and its application in 
 - **Reasoning and Explainability**: Enhancing LLMs' reasoning capabilities for structured decision-making and interpretability.
 
 - **Medical and Financial NLP**: Investigating how domain-specific knowledge improves robustness, factual accuracy, and explainability of generative AI in high-stakes applications.
-- 
+  
 - **Text Understanding and Generation**: Learning text representation with probabilistic explainability and improving factuality and hallucination of generative AI models on text generation.
