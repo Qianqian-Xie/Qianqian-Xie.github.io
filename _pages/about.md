@@ -1,7 +1,7 @@
 ---
 layout: about
 title: about
-permalink: https://scholar.google.com/citations?user=UYW7X_0AAAAJ&hl=en
+permalink: /
 subtitle: <a href='https://sai.whu.edu.cn'>School of Artificial Intelligence, Wuhan University</a>.
 
 profile:
