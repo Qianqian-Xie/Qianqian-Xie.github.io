@@ -422,10 +422,7 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-our-me-llama-has-been-accepted-by-npj-digital-medicine",
-          title: 'Our Me-LLaMA has been accepted by npj Digital Medicine',
-          description: "",
-          section: "News",},{id: "news-i-was-awarded-the-nih-pathway-to-independence-award-k99-r00",
+            },},{id: "news-i-was-awarded-the-nih-pathway-to-independence-award-k99-r00",
           title: 'I was awarded the NIH Pathway to Independence Award (k99/R00)',
           description: "",
           section: "News",},{id: "news-four-papers-have-been-accepted-by-neurips-2024",
@@ -433,6 +430,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-served-as-the-acl-2025-area-chair",
           title: 'Served as the ACL 2025 Area Chair',
+          description: "",
+          section: "News",},{id: "news-our-me-llama-has-been-accepted-by-npj-digital-medicine",
+          title: 'Our Me-LLaMA has been accepted by npj Digital Medicine',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
