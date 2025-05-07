@@ -2,15 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>School of Artificial Intelligence, Wuhan University</a>.
+subtitle: <a href='https://sai.whu.edu.cn'>School of Artificial Intelligence, Wuhan University</a>.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Wuhan</p>
-    <p>Hubei, China</p>
+  more_info: <a href='https://scholar.google.com/citations?user=UYW7X_0AAAAJ&hl=en'>Google Scholar</a>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -26,26 +24,45 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Email: xqq.sincere [at] gmail.com
+Email: xqq.sincere@gmail.com
 
-I will join Wuhan University, School of Artificial Intelligence as a full professor in May, 2025. I completed my Ph.D. in Computer Software and Theory at Wuhan University and my Bachelor's degree in Computer Science and Technology from Jiangxi Normal University. Before joining Wuhan University as a faculty member, I was a Postdoctoral Researcher at Yale University School of Medicine and Weill Cornell Medical College, and an Assistant Researcher at the University of Manchester.
+<h2>About me</h2>
 
-My research focuses on Natural Language Processing (NLP), with an emphasis on **Large Language Models (LLMs), intelligent healthcare, and intelligent finance**. I am interested in efficient training, domain adaptation, explainability, and the robustness of LLMs in specialized applications. Specifically, my work spans across:
+I will join Wuhan University, School of Artificial Intelligence as a Full Professor in May, 2025. Before joining Wuhan University, I was an associate research scientist and postdoc Researcher at Yale University hosted by Professor <a href='https://medicine.yale.edu/profile/hua-xu/'>Hua Xu</a>, Cornell University hosted by Professor <a href='https://wcm-wanglab.github.io/index.html'>Fei Wang</a>, and research associate at the University of Manchester hosted by Professor <a href='https://research.manchester.ac.uk/en/persons/sophia.ananiadou'>Sophia Ananiadou</a> and Professor <a href='https://scholar.google.com/citations?user=h3aNnAIAAAAJ&hl=en'>Junichi Tsujii</a>, from 2021 to 2025. I received my Ph.D. degree from the Wuhan University in December, 2020, under the supervision of Professor <a href='https://cs.whu.edu.cn/info/1019/2893.htm'>Min Peng</a>. I have visited University of Montreal for one year under the supervision of Professor <a href='https://scholar.google.com/citations?user=W7uYg0UAAAAJ&hl=en'>Jian-Yun Nie</a> (2019-2020).
 
-- **Efficient Pre-training and Model Compression**: Exploring methods such as pruning, quantization, and conditional computation to build smaller yet highly competitive models. My work on structured pruning and knowledge distillation has advanced resource-efficient LLM training, as demonstrated in **NeurIPS, ACL, and KDD** publications.
+My research focuses on Natural Language Processing (NLP) and its application in medicine and finance. My work spans across:
 
-- **Biomedical and Financial NLP**: Investigating how domain-specific knowledge improves model robustness, factual accuracy, and explainability in high-stakes applications. My research has contributed to clinical decision support systems, medical summarization, and financial information extraction.
+- **Reasoning and Explainability**: Enhancing LLMs' reasoning capabilities for structured decision-making and interpretability.
 
-- **Hallucination and Misinformation Detection**: Evaluating and mitigating hallucinations in LLM-generated content, particularly in healthcare and finance. I have developed benchmarks and algorithms to improve model trustworthiness, as highlighted in **NPJ Digital Medicine, TOIS, and IEEE Transactions on Knowledge and Data Engineering**.
+- **Medical and Financial NLP**: Investigating how domain-specific knowledge improves robustness, factual accuracy, and explainability of generative AI in high-stakes applications.
+  
+- **Text Understanding and Generation**: Learning text representation with probabilistic explainability and improving factuality and hallucination of generative AI models on text generation.
+  
+**Looking for highly self-motivated Postdoc, Ph.D. student, master student, research assistant and research intern.** If you are interested in join my research group, please feel free to reach out.
+  
+<h2>Work Experience</h2>
 
-- **Reasoning and Explainability**: Enhancing LLMs' reasoning capabilities for structured decision-making and interpretability. My work includes developing **graph-based reasoning models and topic-driven transformers**, pushing the boundaries of explainable AI.
+2025.05-Present, Full Professor, <a href='https://sai.whu.edu.cn'>School of Artificial Intelligence, Wuhan University</a>
 
-My recent projects include **Me-LLaMA: Medical Foundation Large Language Models for Comprehensive Text Analysis** (NPJ Digital Medicine, 2025) and **FinBen: A Holistic Financial Benchmark for Large Language Models** (NeurIPS 2024). Additionally, I have contributed to **MetaAligner**, an alignment framework for multi-objective model tuning, and **FinCon**, a financial multi-agent system for decision-making.
+2024.10-2025.04, Associate Research Scientist, <a href='https://medicine.yale.edu/biomedical-informatics-data-science/'>Department of Biomedical Informatics and Data Science, Yale University</a>
 
-My research previous was supported by the **NIH Pathway to Independence Award (K99/R00)** and the **National High-Level Young Talent Program (Overseas, NSFC)**. I have received multiple awards, including the **CCL Best English Paper Award** and recognition for my contributions to AI-driven financial misinformation detection.
+2023.07-2024.09, Postdoctoral Researcher, <a href='https://medicine.yale.edu/biomedical-informatics-data-science/'>Department of Biomedical Informatics and Data Science, Yale University</a>
 
-I actively contribute to the AI research community as **Program Chair for COLING 2025 FinNLP Workshop**, **Area Chair for ACL 2025, ACL 2023, and EMNLP 2023**, and a reviewer for **ICLR, NeurIPS, ACL, AAAI, KDD, Nature Medicine, and TOIS**. I also mentor students and lead research projects in clinical and financial NLP applications.
+2022.09-2023.07, Postdoctoral Researcher, <a href='https://weill.cornell.edu'>Weill Cornell Medicine, Cornell University</a>
 
-Beyond academia, I have collaborated with industry, interning at **Alibaba DAMO Academy**, where I worked on improving multi-turn dialogue systems using graph neural networks. My work has led to practical advancements in AI-driven conversational systems and domain-specific LLM applications.
+2021.02-2023.08, Research Associate, <a href='https://www.cs.manchester.ac.uk'>Deparment of Computer Science, University of Manchester</a>
 
-I am always open to discussions and collaborations. If you are interested in my work or potential partnerships, feel free to reach out!
+<h2>Education</h2>
+2014.09-2020.12, Ph.D. Degree, School of Computer Science, Wuhan University
+
+2010.09-2014.07, B.E. Degree, School of Computer and Information Engineering, Jiangxi Normal University
+
+<h2>Other Experience</h2>
+2019.11-2020.11, Visiting PhD Student, Department of Computer Science and Operations Research, University of Montreal
+
+2019.07-2020.09, Algorithm Intern, Alibaba damo academy
+
+
+
+
+
