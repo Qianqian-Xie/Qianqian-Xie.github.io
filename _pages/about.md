@@ -18,12 +18,6 @@ announcements:
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
-latest_posts:
-  enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
----
-
 Email: xqq.sincere@gmail.com
 
 <h2>About me</h2>
@@ -35,11 +29,11 @@ My research focuses on Natural Language Processing (NLP) and its application in 
 - **Reasoning and Explainability**: Enhancing LLMs' reasoning capabilities for structured decision-making and interpretability.
 
 - **Medical and Financial NLP**: Investigating how domain-specific knowledge improves robustness, factual accuracy, and explainability of generative AI in high-stakes applications.
-  
+
 - **Text Understanding and Generation**: Learning text representation with probabilistic explainability and improving factuality and hallucination of generative AI models on text generation.
-  
+
 **Looking for highly self-motivated Postdoc, Ph.D. student, master student, research assistant and research intern.** If you are interested in join my research group, please feel free to reach out.
-  
+
 <h2>Work Experience</h2>
 
 2025.05-Present, Full Professor, <a href='https://sai.whu.edu.cn'>School of Artificial Intelligence, Wuhan University</a>
@@ -61,8 +55,3 @@ My research focuses on Natural Language Processing (NLP) and its application in 
 2019.11-2020.11, Visiting PhD Student, Department of Computer Science and Operations Research, University of Montreal
 
 2019.07-2020.09, Algorithm Intern, Alibaba damo academy
-
-
-
-
-
