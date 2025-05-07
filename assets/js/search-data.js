@@ -23,28 +23,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-teaching",
-          title: "teaching",
-          description: "Materials for courses you taught. Replace this text with your description.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/teaching/";
-          },
-        },{id: "nav-people",
-          title: "people",
-          description: "members of the lab or group",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/people/";
-          },
-        },{id: "dropdown-bookshelf",
-              title: "bookshelf",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/books/";
-              },
-            },{id: "news-i-was-awarded-the-nih-pathway-to-independence-award-k99-r00",
+        },{id: "news-i-was-awarded-the-nih-pathway-to-independence-award-k99-r00",
           title: 'I was awarded the NIH Pathway to Independence Award (k99/R00)',
           description: "",
           section: "News",},{id: "news-four-papers-have-been-accepted-by-neurips-2024",
