@@ -9,7 +9,7 @@ last_name: Xie
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Professor at Wuhan University with expertise in Natural Language Processing, Large Language Models, and Intelligent Healthcare..
+  Professor at Wuhan University with expertise in Natural Language Processing, Large Language Models, and Intelligent Healthcare.
 footer_text: >
   @copyright 2025.
 keywords: nlp, fintech, healthcare, bioinformatic, large language models # add your own keywords or leave empty
@@ -143,13 +143,13 @@ newsletter:
 
 collections:
   books:
-    output: true
+    output: false
   news:
     defaults:
       layout: post
     output: true
   projects:
-    output: true
+    output: false
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
