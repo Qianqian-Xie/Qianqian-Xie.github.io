@@ -9,36 +9,36 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-professional-service",
-          title: "professional service",
+  },{id: "nav-service",
+          title: "Service",
           description: "summary of professional services including chairing, reviewing, and organization roles.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/service/";
           },
         },{id: "nav-awards",
-          title: "awards",
+          title: "Awards",
           description: "recognitions and honors received.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/awards/";
           },
-        },{id: "nav-grant",
-          title: "grant",
+        },{id: "nav-grants",
+          title: "Grants",
           description: "externally funded research projects and fellowships.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/grants/";
           },
         },{id: "nav-talks",
-          title: "talks",
+          title: "Talks",
           description: "invited and keynote talks at academic and professional venues.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/talks/";
           },
         },{id: "nav-teaching",
-          title: "teaching",
+          title: "Teaching",
           description: "courses taught and students co-supervised.",
           section: "Navigation",
           handler: () => {
