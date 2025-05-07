@@ -19,7 +19,7 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 ---
 
-Email: xqq.sincere@gmail.com
+Email: xqq.sincere [at] gmail.com
 
 <h2>About me</h2>
 

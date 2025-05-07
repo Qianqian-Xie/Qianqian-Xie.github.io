@@ -2,96 +2,66 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Qianqian Xie
     - name: Languages
-      value: English, German
+      value: Mandarin, English
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Ph.D. in Computer Science
+      institution: Wuhan University, China
+      year: 2014.09 - 2020.12
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - Supervised by Prof. Min Peng
+        - Focused on NLP and its applications in medicine and finance
+    - title: B.E. in Computer and Information Engineering
+      institution: Jiangxi Normal University, China
+      year: 2010.09 - 2014.07
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
+    - title: Full Professor
+      institution: School of Artificial Intelligence, Wuhan University
+      year: 2025.05 - Present
+    - title: Associate Research Scientist
+      institution: Department of Biomedical Informatics and Data Science, Yale University
+      year: 2024.10 - 2025.04
+    - title: Postdoctoral Researcher
+      institution: Department of Biomedical Informatics and Data Science, Yale University
+      year: 2023.07 - 2024.09
+    - title: Postdoctoral Researcher
+      institution: Weill Cornell Medicine, Cornell University
+      year: 2022.09 - 2023.07
+    - title: Research Associate
+      institution: Department of Computer Science, University of Manchester
+      year: 2021.02 - 2023.08
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Other Experience
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+    - title: Visiting PhD Student
+      institution: Department of Computer Science and Operations Research, University of Montreal
+      year: 2019.11 - 2020.11
+      description:
+        - Supervised by Prof. Jian-Yun Nie
+    - title: Algorithm Intern
+      institution: Alibaba DAMO Academy
+      year: 2019.07 - 2020.09
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Reasoning and Explainability
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Enhancing LLMs for structured decision-making
+        - Improving interpretability of generative AI
+    - title: Medical and Financial NLP
       items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - Domain-specific LLMs for robustness and factuality
+        - AI applications in high-stakes domains
+    - title: Text Understanding and Generation
+      items:
+        - Probabilistic explainability in text representations
+        - Mitigating hallucinations in text generation models
