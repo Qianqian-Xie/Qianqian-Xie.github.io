@@ -34,7 +34,7 @@ My research focuses on Natural Language Processing (NLP) and its application in 
 
 - **Text Understanding and Generation**: Learning text representation with probabilistic explainability and improving factuality and hallucination of generative AI models on text generation.
 
-**Looking for highly self-motivated Postdoc, Ph.D. student, master student, research assistant and research intern.** If you are interested in join my research group, please feel free to reach out.
+<span style="color:red;"><strong>Looking for highly self-motivated Postdoc, Ph.D. student, master student, research assistant and research intern.</strong></span> If you are interested in joining my research group, please feel free to reach out.
 
 <h2>Work Experience</h2>
 
