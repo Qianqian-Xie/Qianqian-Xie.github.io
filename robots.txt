@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://Qianqian-Xie.github.io/sitemap.xml
+Sitemap: https://qianqian-xie.github.io/sitemap.xml
