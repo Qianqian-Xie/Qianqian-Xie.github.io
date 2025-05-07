@@ -1,15 +1,13 @@
 ---
 layout: page
 permalink: /talks/
-title: talks
+title: Talks
 description: invited and keynote talks at academic and professional venues.
 nav: true
 nav_order: 6
 ---
 
 <!-- _pages/talks.md -->
-
-<h2>Invited & Keynote Talks</h2>
 
 <ul>
   <li><strong>MLNLP</strong>, <em>Towards AI Readiness in Specific Domains: Benchmark, Model, Application and Privacy Protection</em>, China, 2025</li>

@@ -1,15 +1,13 @@
 ---
 layout: page
 permalink: /service/
-title: professional service
+title: Service
 description: summary of professional services including chairing, reviewing, and organization roles.
 nav: true
 nav_order: 3
 ---
 
 <!-- _pages/service.md -->
-
-<h2>Professional Service</h2>
 
 <ul>
   <li><strong>General Co-Chair</strong>: FinNLP-FNP-LLMFinLegal @ COLING 2025</li>

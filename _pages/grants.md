@@ -1,15 +1,13 @@
 ---
 layout: page
 permalink: /grants/
-title: grant
+title: Grants
 description: externally funded research projects and fellowships.
 nav: true
 nav_order: 5
 ---
 
 <!-- _pages/grants.md -->
-
-<h2>Grants</h2>
 
 <ul>
   <li>

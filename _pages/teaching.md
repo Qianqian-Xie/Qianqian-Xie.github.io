@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
+title: Teaching
 description: courses taught and students co-supervised.
 nav: true
 nav_order: 7
@@ -9,7 +9,7 @@ nav_order: 7
 
 <!-- _pages/teaching.md -->
 
-<h2>Teaching</h2>
+<h2>Courses</h2>
 
 <ul>
   <li><strong>Guest Lecturer</strong>, <em>BIOF39 Text Mining</em>, National Institutes of Health (NIH), 2023</li>

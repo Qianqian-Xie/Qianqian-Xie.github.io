@@ -1,15 +1,13 @@
 ---
 layout: page
 permalink: /awards/
-title: awards
+title: Awards
 description: recognitions and honors received.
 nav: true
 nav_order: 4
 ---
 
 <!-- _pages/awards.md -->
-
-<h2>Awards</h2>
 
 <ul>
   <li><strong>K99/R00: Pathway to Independence Award</strong>, National Institutes of Health, 2024</li>
