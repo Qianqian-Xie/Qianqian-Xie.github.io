@@ -24,7 +24,8 @@ Email: xqq.sincere [at] gmail.com
 
 <h2>About me</h2>
 
-I will join Wuhan University, School of Artificial Intelligence as a Full Professor in May, 2025. Before joining Wuhan University, I was an associate research scientist and postdoc Researcher at Yale University hosted by Professor <a href='https://medicine.yale.edu/profile/hua-xu/'>Hua Xu</a>, Cornell University hosted by Professor <a href='https://wcm-wanglab.github.io/index.html'>Fei Wang</a>, and research associate at the University of Manchester hosted by Professor <a href='https://research.manchester.ac.uk/en/persons/sophia.ananiadou'>Sophia Ananiadou</a> and Professor <a href='https://scholar.google.com/citations?user=h3aNnAIAAAAJ&hl=en'>Junichi Tsujii</a>, from 2021 to 2025. I received my Ph.D. degree from the Wuhan University in December, 2020, under the supervision of Professor <a href='https://cs.whu.edu.cn/info/1019/2893.htm'>Min Peng</a>. I have visited University of Montreal for one year under the supervision of Professor <a href='https://scholar.google.com/citations?user=W7uYg0UAAAAJ&hl=en'>Jian-Yun Nie</a> (2019-2020).
+I will join Wuhan University, School of Artificial Intelligence as a Full Professor in May, 2025. Before joining Wuhan University, I was an associate research scientist and postdoc Researcher at Yale University hosted by Professor <a href='https://medicine.yale.edu/profile/hua-xu/'>Hua Xu</a>, and research associate at the University of Manchester hosted by Professor <a href='https://research.manchester.ac.uk/en/
+persons/sophia.ananiadou'>Sophia Ananiadou</a> and Professor <a href='https://scholar.google.com/citations?user=h3aNnAIAAAAJ&hl=en'>Junichi Tsujii</a>, from 2021 to 2025. I received my Ph.D. degree from the Wuhan University in December, 2020, under the supervision of Professor <a href='https://cs.whu.edu.cn/info/1019/2893.htm'>Min Peng</a>. I have visited University of Montreal for one year under the supervision of Professor <a href='https://scholar.google.com/citations?user=W7uYg0UAAAAJ&hl=en'>Jian-Yun Nie</a> (2019-2020).
 
 My research focuses on Natural Language Processing (NLP) and its application in medicine and finance. My work spans across:
 
@@ -43,10 +44,6 @@ My research focuses on Natural Language Processing (NLP) and its application in 
 2024.10-2025.04, Associate Research Scientist, <a href='https://medicine.yale.edu/biomedical-informatics-data-science/'>Department of Biomedical Informatics and Data Science, Yale University</a>
 
 2023.07-2024.09, Postdoctoral Researcher, <a href='https://medicine.yale.edu/biomedical-informatics-data-science/'>Department of Biomedical Informatics and Data Science, Yale University</a>
-
-2022.09-2023.07, Postdoctoral Researcher, <a href='https://weill.cornell.edu'>Weill Cornell Medicine, Cornell University</a>
-
-2021.02-2023.08, Research Associate, <a href='https://www.cs.manchester.ac.uk'>Deparment of Computer Science, University of Manchester</a>
 
 <h2>Education</h2>
 2014.09-2020.12, Ph.D. Degree, School of Computer Science, Wuhan University
