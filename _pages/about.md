@@ -45,6 +45,10 @@ My research focuses on Natural Language Processing (NLP) and its application in 
 
 2023.07-2024.09, Postdoctoral Researcher, <a href='https://medicine.yale.edu/biomedical-informatics-data-science/'>Department of Biomedical Informatics and Data Science, Yale University</a>
 
+2022.09-2023.07, Postdoctoral Researcher, <a href='https://weill.cornell.edu'>Weill Cornell Medicine, Cornell University</a>
+
+2021.02-2022.08, Research Associate, <a href='https://www.cs.manchester.ac.uk'>Deparment of Computer Science, University of Manchester</a>
+
 <h2>Education</h2>
 2014.09-2020.12, Ph.D. Degree, School of Computer Science, Wuhan University
 
