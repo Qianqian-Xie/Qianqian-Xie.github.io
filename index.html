@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en" data-l="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Qianqian Xie (谢倩倩), Professor at the School of Artificial Intelligence, Wuhan University. NLP, large language models, medical AI and intelligent finance.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>Qianqian Xie · 谢倩倩</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Manrope:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#F4F6F5;--sur:#FFFFFF;--ink:#12201F;--ink2:#3E4C4A;--mute:#71807D;--line:#D9E0DE;
+  --whu:#0F4A48;--whu-ink:#0C3B39;--whu-soft:#E1ECEA;--whu-deep:#0A3533;
+  --sakura:#C9607C;--sakura-soft:#F8E6EB;--petal:#F2B8C6;
+  --display:"Newsreader",Georgia,"Times New Roman",serif;
+  --zh:"Noto Serif SC","Songti SC","SimSun",serif;
+  --body:"Manrope","Noto Sans SC","PingFang SC","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0B1413;--sur:#121C1B;--ink:#E6ECEA;--ink2:#BCC7C4;--mute:#8A9995;--line:#233230;
+  --whu:#6FC3BC;--whu-ink:#93D4CE;--whu-soft:#14302E;--whu-deep:#0F3A38;
+  --sakura:#E79AAE;--sakura-soft:#2E1B22;--petal:#8C4A5C;}}
+:root[data-theme="dark"]{
+  --bg:#0B1413;--sur:#121C1B;--ink:#E6ECEA;--ink2:#BCC7C4;--mute:#8A9995;--line:#233230;
+  --whu:#6FC3BC;--whu-ink:#93D4CE;--whu-soft:#14302E;--whu-deep:#0F3A38;
+  --sakura:#E79AAE;--sakura-soft:#2E1B22;--petal:#8C4A5C;}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.6;padding-inline:20px;padding-block:0}
+/* language switching */
+html[data-l="en"] [data-lang="zh"]{display:none!important}
+html[data-l="zh"] [data-lang="en"]{display:none!important}
+html[data-l="zh"] body{font-size:16px;line-height:1.75}
+html[data-l="zh"] h1,html[data-l="zh"] h2,html[data-l="zh"] .lede,html[data-l="zh"] .theme b,html[data-l="zh"] .brand{font-family:var(--zh)}
+a{color:var(--whu);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:3px}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--whu);outline-offset:3px}
+.c{max-width:1080px;margin:0 auto}
+.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);margin-inline:-20px;padding-inline:20px}
+.top .c{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.brand{font-family:var(--display);font-size:20px;font-weight:500;color:var(--ink);letter-spacing:-.01em;white-space:nowrap}
+.menu{display:flex;gap:4px;list-style:none;margin:0;padding:0;overflow-x:auto;align-items:center}
+.menu a{display:block;padding:6px 11px;border-radius:999px;font-size:14px;font-weight:600;color:var(--ink2);white-space:nowrap}
+.menu a:hover,.menu a.on{background:var(--whu-soft);color:var(--whu-ink);text-decoration:none}
+#lang{margin-left:6px;font:600 13px var(--body);padding:6px 12px;border-radius:999px;border:1px solid var(--whu);background:transparent;color:var(--whu);cursor:pointer;white-space:nowrap}
+#lang:hover{background:var(--whu-soft)}
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.85fr);gap:56px;align-items:center;padding-block:72px 64px;overflow:hidden}
+#petals{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.hero > *{position:relative;z-index:1}
+.eyebrow{font-family:var(--zh);font-size:14px;letter-spacing:.24em;color:var(--whu);margin:0 0 14px;font-weight:600}
+.eyebrow::before{content:"";display:inline-block;width:28px;height:1px;background:var(--whu);vertical-align:middle;margin-right:12px}
+h1{font-family:var(--display);font-weight:500;font-size:clamp(44px,6vw,68px);line-height:1;letter-spacing:-.02em;margin:0 0 18px;font-variation-settings:"opsz" 72;text-wrap:balance}
+h1 .sub{display:block;font-family:var(--zh);font-size:.42em;font-weight:500;letter-spacing:.2em;color:var(--ink2);margin-top:14px}
+html[data-l="zh"] h1{font-size:clamp(40px,5.5vw,60px);letter-spacing:.06em}
+html[data-l="zh"] h1 .sub{font-family:var(--display);letter-spacing:0;font-size:.45em}
+.title{font-size:17px;color:var(--ink2);margin:0 0 22px;line-height:1.5}
+.lede{font-family:var(--display);font-size:23px;line-height:1.4;color:var(--ink);margin:0 0 28px;max-width:30ch;font-variation-settings:"opsz" 24}
+html[data-l="zh"] .lede{font-size:21px;line-height:1.6}
+.lede em{font-style:italic;color:var(--whu-ink)}
+html[data-l="zh"] .lede em{font-style:normal}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;font-weight:600;font-size:14.5px;border:1px solid var(--line);background:var(--sur);color:var(--ink)}
+.btn:hover{text-decoration:none;border-color:var(--whu)}
+.btn.p{background:var(--whu);border-color:var(--whu);color:#fff}
+:root[data-theme="dark"] .btn.p{color:#0B1413}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.p{color:#0B1413}}
+.btn svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2}
+.pic{position:relative}
+.pic img{width:100%;max-width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 15%;border-radius:18px;display:block;box-shadow:0 30px 60px -30px rgba(15,74,72,.45)}
+.pic::after{content:"";position:absolute;inset:auto -14px -14px auto;width:60%;height:60%;border:1px solid var(--whu);border-radius:18px;z-index:-1;opacity:.5}
+.strip{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;background:var(--whu-deep);color:#E9F2F1;border-radius:14px;padding:18px 24px;margin-bottom:72px}
+.strip .k{font-family:var(--zh);letter-spacing:.2em;font-size:13px;color:var(--petal);font-weight:600}
+.strip p{margin:0;font-size:15.5px;max-width:none}
+.strip a{color:#fff;font-weight:700;white-space:nowrap}
+section{padding-block:0 72px;scroll-margin-top:80px}
+.sh{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:26px;flex-wrap:wrap}
+h2{font-family:var(--display);font-weight:500;font-size:34px;letter-spacing:-.015em;margin:0;line-height:1.1;font-variation-settings:"opsz" 48}
+html[data-l="zh"] h2{font-size:30px;letter-spacing:.04em}
+h2 .zh{font-family:var(--zh);font-size:14px;letter-spacing:.24em;color:var(--whu);display:block;margin-bottom:8px;font-weight:600}
+html[data-l="zh"] h2 .zh{font-family:var(--display);letter-spacing:.04em;font-size:14px}
+.more{font-size:14.5px;font-weight:600;color:var(--whu)}
+h3{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin:0 0 12px;font-weight:700}
+html[data-l="zh"] h3{letter-spacing:.2em}
+p{margin:0 0 14px;max-width:68ch}
+.about{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:56px}
+.about p{font-size:17px}
+.facts{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.facts li{display:grid;grid-template-columns:96px 1fr;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.facts b{color:var(--mute);font-weight:600}
+.themes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.theme{background:var(--sur);border:1px solid var(--line);border-radius:14px;padding:22px 22px 20px;position:relative;overflow:hidden}
+.theme::before{content:"";position:absolute;top:0;left:22px;width:36px;height:3px;background:var(--whu);border-radius:0 0 3px 3px}
+.theme b{display:block;font-family:var(--display);font-weight:500;font-size:21px;line-height:1.2;margin:8px 0 8px}
+.theme p{font-size:15px;color:var(--ink2);margin:0}
+.tools{margin-top:18px;font-size:15px;color:var(--ink2)}
+.tools a{font-weight:600}
+/* news */
+.news{list-style:none;margin:0;padding:0;background:var(--sur);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.news li{display:grid;grid-template-columns:100px 1fr;gap:14px;padding:13px 22px;border-top:1px solid var(--line);font-size:15.5px;line-height:1.45}
+.news li:first-child{border-top:0}
+.news time{font-family:var(--mono);font-size:12.5px;color:var(--mute);padding-top:3px;font-variant-numeric:tabular-nums}
+.news a{color:var(--ink)}
+/* pubs */
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin-bottom:22px}
+.stat b{display:block;font-family:var(--display);font-size:30px;font-weight:500;color:var(--whu-ink);line-height:1;font-variant-numeric:tabular-nums}
+.stat span{font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);font-weight:700}
+.pubbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 14px}
+.chip{font:600 13px var(--body);padding:6px 13px;border:1px solid var(--line);border-radius:999px;background:var(--sur);color:var(--ink2);cursor:pointer}
+.chip.on{background:var(--whu);border-color:var(--whu);color:#fff}
+:root[data-theme="dark"] .chip.on{color:#0B1413}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .chip.on{color:#0B1413}}
+#q{margin-left:auto;font:15px var(--body);padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:var(--sur);color:var(--ink);width:240px;max-width:100%}
+.count{font-family:var(--mono);font-size:12.5px;color:var(--mute)}
+.year{display:grid;grid-template-columns:70px 1fr;gap:16px}
+.year>.y{font-family:var(--display);font-size:24px;color:var(--mute);padding-top:14px;font-variant-numeric:tabular-nums}
+.pub{padding:12px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:14px;align-items:start}
+.pub .t{font-weight:600;font-size:16px;line-height:1.35}
+.pub .t a{color:var(--ink)}
+.pub .au{font-size:14px;color:var(--ink2);margin-top:3px}
+.pub .au .me{color:var(--whu-ink);font-weight:700}
+.pub .meta{margin-top:6px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.tag{font:500 12px var(--mono);padding:2px 8px;border-radius:4px;background:var(--whu-soft);color:var(--whu-ink)}
+.tag.pre{background:transparent;border:1px solid var(--line);color:var(--mute)}
+.cit{font-family:var(--mono);font-size:12.5px;color:var(--mute);white-space:nowrap;padding-top:3px;font-variant-numeric:tabular-nums}
+.cit b{color:var(--ink);font-weight:500}
+/* timeline & cards */
+.tl{list-style:none;padding:0;margin:0}
+.tl li{display:grid;grid-template-columns:160px 1fr;gap:16px;padding:10px 0;border-top:1px solid var(--line);font-size:15.5px}
+.tl .d{font-family:var(--mono);font-size:13px;color:var(--mute);padding-top:3px;font-variant-numeric:tabular-nums}
+.tl b{font-weight:700}.tl span{color:var(--ink2)}
+.cv{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{background:var(--sur);border:1px solid var(--line);border-radius:16px;padding:24px}
+.card h2{font-size:24px}
+.card .tl li{grid-template-columns:118px 1fr;font-size:14.5px}
+.card p{font-size:14.5px;color:var(--ink2);line-height:1.7}
+.grant{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap}
+.grant .amt{font-family:var(--display);font-size:32px;color:var(--whu-ink);font-variant-numeric:tabular-nums;font-weight:500}
+.grant small{color:var(--mute);font-size:13.5px}
+footer{border-top:1px solid var(--line);margin-inline:-20px;padding-inline:20px;padding-block:28px 40px;color:var(--mute);font-size:13.5px}
+footer .c{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;gap:32px;padding-block:40px 40px}
+  .pic{max-width:320px}
+  .about,.themes,.cv{grid-template-columns:1fr}
+  .strip{grid-template-columns:1fr;gap:8px}
+  .tl li,.card .tl li{grid-template-columns:1fr;gap:2px}
+  .year{grid-template-columns:1fr}.year>.y{padding-top:20px}
+  .pub{grid-template-columns:1fr}
+  #q{margin-left:0;width:100%}
+  .news li{grid-template-columns:86px 1fr;padding-inline:16px}
+}
+</style>
+</head>
+<body>
+
+
+<header class="top"><div class="c">
+  <a class="brand" href="#top"><span data-lang="en">Qianqian Xie</span><span data-lang="zh">谢倩倩</span></a>
+  <ul class="menu" id="menu">
+    <li><a href="#about"><span data-lang="en">About</span><span data-lang="zh">简介</span></a></li>
+    <li><a href="#research"><span data-lang="en">Research</span><span data-lang="zh">研究</span></a></li>
+    <li><a href="#news"><span data-lang="en">News</span><span data-lang="zh">动态</span></a></li>
+    <li><a href="#publications"><span data-lang="en">Publications</span><span data-lang="zh">论文</span></a></li>
+    <li><a href="#cv"><span data-lang="en">CV</span><span data-lang="zh">履历</span></a></li>
+    <li><a href="#contact"><span data-lang="en">Contact</span><span data-lang="zh">联系</span></a></li>
+    <li><button id="lang" type="button" aria-label="Switch language"><span data-lang="en">中文</span><span data-lang="zh">English</span></button></li>
+  </ul>
+</div></header>
+
+<div class="c" id="top">
+<div class="hero">
+  <canvas id="petals" aria-hidden="true"></canvas>
+  <div>
+    <p class="eyebrow"><span data-lang="en">武汉大学 · 人工智能学院</span><span data-lang="zh">Wuhan University · School of Artificial Intelligence</span></p>
+    <h1><span data-lang="en">Qianqian Xie<span class="sub">谢倩倩</span></span><span data-lang="zh">谢倩倩<span class="sub">Qianqian Xie</span></span></h1>
+    <p class="title" data-lang="en">Professor and Doctoral Supervisor, School of Artificial Intelligence, Wuhan University<br>Deputy Director, Institute of Natural Language Processing · Co-Director, <a href="https://clain.org/">Cognitive Language and Information Lab (CLAIN)</a></p>
+    <p class="title" data-lang="zh">武汉大学人工智能学院 教授、博士生导师<br>自然语言处理研究所副所长 · <a href="https://clain.org/">认知语言与信息实验室（CLAIN）</a>联合主任</p>
+    <p class="lede" data-lang="en">AI of humanity, by humanity, <em>for humanity</em>: language models that reason, explain, and stay reliable where it matters most, in medicine and finance.</p>
+    <p class="lede" data-lang="zh">源于人类、协同人类、<em>造福人类</em>：构建会推理、能解释，并在医疗与金融等高风险场景中可靠可信的大语言模型。</p>
+    <div class="cta">
+      <a class="btn p" href="https://scholar.google.com/citations?user=UYW7X_0AAAAJ&hl=en"><svg viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5z"/><path d="M6 10v5c0 2 3 4 6 4s6-2 6-4v-5"/></svg>Google Scholar</a>
+      <a class="btn" href="https://clain.org/"><span data-lang="en">CLAIN Lab</span><span data-lang="zh">实验室主页</span></a>
+      <a class="btn" href="mailto:xqq.sincere@gmail.com"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span data-lang="en">Email</span><span data-lang="zh">邮箱</span></a>
+    </div>
+  </div>
+  <div class="pic"><img src="assets/img/prof_pic.jpg" alt="Portrait of Qianqian Xie"></div>
+</div>
+
+<div class="strip">
+  <span class="k"><span data-lang="en">招 生</span><span data-lang="zh">招 生</span></span>
+  <p data-lang="en">Looking for self-motivated postdocs, Ph.D. and master's students, research assistants and interns in NLP, medical AI and financial AI.</p>
+  <p data-lang="zh">长期招收自然语言处理、医疗人工智能、金融人工智能方向的博士后、博士生、硕士生、科研助理与实习生，欢迎自我驱动的同学联系。</p>
+  <a href="https://clain.org/#/contact"><span data-lang="en">How to apply →</span><span data-lang="zh">申请方式 →</span></a>
+</div>
+
+<section id="about">
+  <div class="sh"><h2><span class="zh"><span data-lang="en">关 于</span><span data-lang="zh">About</span></span><span data-lang="en">About</span><span data-lang="zh">简介</span></h2></div>
+  <div class="about">
+    <div>
+      <div data-lang="en">
+      <p>I joined Wuhan University in May 2025 as a Full Professor at the School of Artificial Intelligence, where I serve as Deputy Director of the Institute of Natural Language Processing and co-direct the Cognitive Language and Information Lab (CLAIN) with Professor <a href="https://cs.whu.edu.cn/info/1019/2893.htm">Min Peng</a>. My research spans natural language processing, large language model reasoning, interpretability and controllability, multimodal fusion and intelligent agents, with applications in medical AI and intelligent finance. Following the CLAIN vision of AI that is of humanity, by humanity and for humanity, I work on models grounded in human language and knowledge, built through interdisciplinary collaboration, and aimed at real problems in healthcare, finance and society. I am a recipient of the National High-level Young Talent Program (Overseas) and serve as Secretary of the ACL Special Interest Group on Financial Technology (SIG-FinTech).</p>
+      <p>Before returning to Wuhan I was an Associate Research Scientist and postdoctoral researcher at Yale University with Professor <a href="https://medicine.yale.edu/profile/hua-xu/">Hua Xu</a>, a postdoctoral researcher at Weill Cornell Medicine, and a Research Associate at the University of Manchester with Professors <a href="https://research.manchester.ac.uk/en/persons/sophia.ananiadou">Sophia Ananiadou</a> and <a href="https://scholar.google.com/citations?user=h3aNnAIAAAAJ&hl=en">Junichi Tsujii</a>. I received my Ph.D. from Wuhan University in 2020 under Professor Min Peng, and spent a year at the University of Montreal with Professor <a href="https://scholar.google.com/citations?user=W7uYg0UAAAAJ&hl=en">Jian-Yun Nie</a>.</p>
+      </div>
+      <div data-lang="zh">
+      <p>2025 年 5 月起任武汉大学人工智能学院教授、博士生导师，任人工智能学院自然语言处理研究所副所长，并与<a href="https://cs.whu.edu.cn/info/1019/2893.htm">彭敏</a>教授共同担任认知语言与信息实验室（CLAIN）主任。研究方向涵盖自然语言处理、大语言模型推理、可解释性与可控性、多模态融合与智能体，以及在医疗人工智能与智能金融中的应用。秉持 CLAIN"源于人类、协同人类、造福人类"的愿景，致力于构建植根于人类语言与知识、通过跨学科协作铸就、并服务于医疗、金融与社会真实问题的人工智能。国家高层次青年人才计划（海外）获得者，现任 ACL 金融科技特别兴趣小组（SIG-FinTech）秘书。</p>
+      <p>回到武汉之前，曾任耶鲁大学副研究员及博士后（合作导师 <a href="https://medicine.yale.edu/profile/hua-xu/">Hua Xu</a> 教授）、康奈尔大学威尔医学院博士后，以及曼彻斯特大学研究员（合作导师 <a href="https://research.manchester.ac.uk/en/persons/sophia.ananiadou">Sophia Ananiadou</a> 教授与 <a href="https://scholar.google.com/citations?user=h3aNnAIAAAAJ&hl=en">Junichi Tsujii</a> 教授）。2020 年于武汉大学获博士学位（导师彭敏教授），其间在蒙特利尔大学访学一年（导师 <a href="https://scholar.google.com/citations?user=W7uYg0UAAAAJ&hl=en">聂建云</a>教授）。</p>
+      </div>
+    </div>
+    <ul class="facts">
+      <li><b><span data-lang="en">Papers</span><span data-lang="zh">论文</span></b><span><span data-lang="en">160+ papers, 7,100+ citations, h-index 39 (Google Scholar)</span><span data-lang="zh">发表论文 160 余篇，引用 7,100 余次，h 指数 39（Google Scholar）</span></span></li>
+      <li><b><span data-lang="en">Funding</span><span data-lang="zh">项目</span></b><span><span data-lang="en">National High-level Young Talent Program (Overseas) · NSFC General Program (PI, 2026) · NIH K99/R00 (PI) · CCF–Tencent Rhino-Bird Fund (PI, 2025)</span><span data-lang="zh">国家高层次青年人才计划（海外）· 国家自然科学基金面上项目（2026，主持）· NIH K99/R00（主持）· CCF-腾讯犀牛鸟基金（2025，主持）</span></span></li>
+      <li><b><span data-lang="en">Honors</span><span data-lang="zh">荣誉</span></b><span><span data-lang="en">Hubei S&amp;T Progress Award, 2nd Class · CCL Highlight Paper Award</span><span data-lang="zh">湖北省科技进步二等奖 · CCL 亮点英文论文奖</span></span></li>
+      <li><b><span data-lang="en">Service</span><span data-lang="zh">学术服务</span></b><span><span data-lang="en">Secretary, ACL SIG-FinTech · SAC EACL 2025 · AC ACL, EMNLP, NeurIPS, COLING, LREC</span><span data-lang="zh">ACL SIG-FinTech 秘书 · EACL 2025 资深领域主席 · ACL、EMNLP、NeurIPS、COLING、LREC 领域主席</span></span></li>
+      <li><b><span data-lang="en">Open source</span><span data-lang="zh">开源</span></b><span><span data-lang="en">3,000+ GitHub stars · 68k model downloads · 130k dataset downloads</span><span data-lang="zh">GitHub 3,000+ Star · 模型下载 6.8 万次 · 数据集下载 13 万次</span></span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="research">
+  <div class="sh"><h2><span class="zh"><span data-lang="en">研 究</span><span data-lang="zh">Research</span></span><span data-lang="en">Research</span><span data-lang="zh">研究方向</span></h2></div>
+  <div class="themes">
+    <div class="theme"><b><span data-lang="en">LLM reasoning, interpretability and controllability</span><span data-lang="zh">大模型推理、可解释性与可控性</span></b><p data-lang="en">Reinforcement learning and preference optimization for structured reasoning; making model decisions inspectable and steerable.</p><p data-lang="zh">面向结构化推理的强化学习与偏好优化；让模型决策可检验、可引导。</p></div>
+    <div class="theme"><b><span data-lang="en">Medical AI</span><span data-lang="zh">医疗人工智能</span></b><p data-lang="en">Medical foundation models, clinical decision support and mental-health reasoning: Me-LLaMA, MentaLLaMA, MiraMind, SiMing-Bench.</p><p data-lang="zh">医疗基础模型、临床决策支持与心理健康推理：Me-LLaMA、MentaLLaMA、MiraMind、SiMing-Bench。</p></div>
+    <div class="theme"><b><span data-lang="en">Intelligent finance</span><span data-lang="zh">智能金融</span></b><p data-lang="en">Financial LLM benchmarks, agents and misinformation detection: PIXIU, FinBen, FinCon, InvestorBench; ACL SIG-FinTech.</p><p data-lang="zh">金融大模型基准、智能体与虚假信息检测：PIXIU、FinBen、FinCon、InvestorBench；ACL SIG-FinTech。</p></div>
+    <div class="theme"><b><span data-lang="en">Multimodal fusion and intelligent agents</span><span data-lang="zh">多模态融合与智能体</span></b><p data-lang="en">Vision-language understanding of procedures and documents; multi-agent frameworks for evaluation and decision-making.</p><p data-lang="zh">面向流程与文档的视觉语言理解；用于评测与决策的多智能体框架。</p></div>
+    <div class="theme"><b><span data-lang="en">NLP, retrieval and knowledge graphs</span><span data-lang="zh">自然语言处理、检索与知识图谱</span></b><p data-lang="en">Retrieval-augmented generation, knowledge-graph reasoning (Graph-RFT) and text representation with probabilistic explainability.</p><p data-lang="zh">检索增强生成、知识图谱推理（Graph-RFT）与具备概率可解释性的文本表示。</p></div>
+    <div class="theme"><b><span data-lang="en">Social computing and AI for society</span><span data-lang="zh">社会计算与 AI 向善</span></b><p data-lang="en">Cultural meaning in translation (DITING), legal and user-centric benchmarks, and trustworthy evaluation of generative AI.</p><p data-lang="zh">翻译中的文化内涵（DITING）、法律与用户中心基准，以及生成式 AI 的可信评测。</p></div>
+  </div>
+  <p class="tools"><span data-lang="en">Open models and benchmarks:</span><span data-lang="zh">开源模型与基准：</span> <a href="https://www.nature.com/articles/s41746-025-01533-1">Me-LLaMA</a> · <a href="https://github.com/The-FinAI/PIXIU">PIXIU / FinBen</a> · <a href="https://github.com/SteveKGYang/MentalLLaMA">MentaLLaMA</a> · <a href="https://arxiv.org/abs/2512.09636">MiraMind</a> · <a href="https://huggingface.co/NextGenWhu">CLAIN on Hugging Face</a></p>
+</section>
+
+<section id="news">
+  <div class="sh"><h2><span class="zh"><span data-lang="en">动 态</span><span data-lang="zh">News</span></span><span data-lang="en">News</span><span data-lang="zh">最新动态</span></h2><a class="more" href="https://clain.org/#/news"><span data-lang="en">All lab news at clain.org ↗</span><span data-lang="zh">更多动态见实验室主站 ↗</span></a></div>
+  <ul class="news">
+    <li><time>2026-08-26</time><span><a href="https://clain.org/#/news"><span data-lang="en">Awarded a National Natural Science Foundation of China General Program grant.</span><span data-lang="zh">获批国家自然科学基金面上项目。</span></a></span></li>
+    <li><time>2026-08-21</time><span><a href="https://clain.org/#/news"><span data-lang="en">Two papers accepted at EMNLP 2026 main conference: DITING (web-novel translation evaluation) and SiMing-Bench (clinical skill videos).</span><span data-lang="zh">两篇论文被 EMNLP 2026 主会录用：DITING（网络文学翻译评测）与 SiMing-Bench（临床技能视频评测）。</span></a></span></li>
+    <li><time>2026-01-18</time><span><a href="https://clain.org/#/news"><span data-lang="en">ACL SIG-FinTech × TFAI biweekly webinar series launched, with Yale, NaCTeM and MBZUAI.</span><span data-lang="zh">ACL SIG-FinTech × TFAI 双周线上研讨会系列启动，联合耶鲁大学、NaCTeM 与 MBZUAI。</span></a></span></li>
+    <li><time>2026-01-13</time><span><a href="https://clain.org/#/news"><span data-lang="en">Plan Then Retrieve (Graph-RFT) accepted at The Web Conference 2026.</span><span data-lang="zh">Plan Then Retrieve（Graph-RFT）被 WWW 2026 录用。</span></a></span></li>
+    <li><time>2025-12-16</time><span><a href="https://arxiv.org/abs/2512.09636"><span data-lang="en">MiraMind, our mental-health reasoning benchmark, ranked #1 Paper of the Day on Hugging Face.</span><span data-lang="zh">心理健康推理基准 MiraMind 登上 Hugging Face 每日论文榜首。</span></a></span></li>
+    <li><time>2025-09-21</time><span><a href="https://clain.org/#/news"><span data-lang="en">Keynote at CCKS 2025 Medical Knowledge Graph Forum: Knowledge-Enhanced LLMs and Applications in Healthcare.</span><span data-lang="zh">在 CCKS 2025 医疗知识图谱论坛作主旨报告《医疗领域知识增强大语言模型与应用》。</span></a></span></li>
+    <li><time>2025-08-01</time><span><a href="https://clain.org/#/news"><span data-lang="en">Selected for the 2025 CCF–Tencent Rhino-Bird Fund (37 scholars nationwide).</span><span data-lang="zh">入选 2025 年度 CCF-腾讯犀牛鸟基金（全国 37 人）。</span></a></span></li>
+    <li><time>2025-02-26</time><span><a href="https://www.nature.com/articles/s41746-025-01533-1"><span data-lang="en">Me-LLaMA published in npj Digital Medicine.</span><span data-lang="zh">Me-LLaMA 发表于 npj Digital Medicine。</span></a></span></li>
+  </ul>
+</section>
+
+<section id="publications">
+  <div class="sh"><h2><span class="zh"><span data-lang="en">论 文</span><span data-lang="zh">Publications</span></span><span data-lang="en">Publications</span><span data-lang="zh">论文发表</span></h2><a class="more" href="https://scholar.google.com/citations?user=UYW7X_0AAAAJ&hl=en"><span data-lang="en">Google Scholar ↗</span><span data-lang="zh">Google Scholar ↗</span></a></div>
+  <div class="stats">
+    <div class="stat"><b id="s-n">163</b><span><span data-lang="en">Papers</span><span data-lang="zh">论文</span></span></div>
+    <div class="stat"><b id="s-c">7,146</b><span><span data-lang="en">Citations</span><span data-lang="zh">引用</span></span></div>
+    <div class="stat"><b id="s-h">39</b><span>h-index</span></div>
+    <div class="stat"><b id="s-i">78</b><span>i10-index</span></div>
+  </div>
+  <div class="pubbar">
+    <button class="chip on" data-f="top" type="button"><span data-lang="en">Most cited</span><span data-lang="zh">高被引</span></button>
+    <button class="chip" data-f="recent" type="button"><span data-lang="en">2025–2026</span><span data-lang="zh">2025–2026</span></button>
+    <button class="chip" data-f="all" type="button"><span data-lang="en">All</span><span data-lang="zh">全部</span></button>
+    <span class="count" id="count"></span>
+    <input id="q" type="search" placeholder="Search title, author, venue" aria-label="Search publications">
+  </div>
+  <div id="publist"></div>
+  <p style="margin-top:14px;font-size:13.5px;color:var(--mute)"><span data-lang="en">Synced from Google Scholar on <span class="s-d">2026-09-16</span>.</span><span data-lang="zh">数据于 <span class="s-d">2026-09-16</span> 同步自 Google Scholar。</span></p>
+</section>
+
+<section id="cv">
+  <div class="sh"><h2><span class="zh"><span data-lang="en">履 历</span><span data-lang="zh">Curriculum Vitae</span></span><span data-lang="en">Curriculum Vitae</span><span data-lang="zh">履历</span></h2></div>
+  <h3><span data-lang="en">Appointments and education</span><span data-lang="zh">任职与教育经历</span></h3>
+  <ul class="tl">
+    <li><span class="d">2025.05 –</span><div><b><span data-lang="en">Full Professor, Doctoral Supervisor</span><span data-lang="zh">教授、博士生导师</span></b> <span><span data-lang="en">· School of Artificial Intelligence, Wuhan University · Deputy Director, Institute of NLP · Co-Director, CLAIN</span><span data-lang="zh">· 武汉大学人工智能学院 · 自然语言处理研究所副所长 · CLAIN 联合主任</span></span></div></li>
+    <li><span class="d">2024.10 – 2025.04</span><div><b><span data-lang="en">Associate Research Scientist</span><span data-lang="zh">副研究员</span></b> <span><span data-lang="en">· Biomedical Informatics and Data Science, Yale University</span><span data-lang="zh">· 耶鲁大学生物医学信息与数据科学系</span></span></div></li>
+    <li><span class="d">2023.07 – 2024.09</span><div><b><span data-lang="en">Postdoctoral Researcher</span><span data-lang="zh">博士后</span></b> <span><span data-lang="en">· Yale University</span><span data-lang="zh">· 耶鲁大学</span></span></div></li>
+    <li><span class="d">2022.09 – 2023.07</span><div><b><span data-lang="en">Postdoctoral Researcher</span><span data-lang="zh">博士后</span></b> <span><span data-lang="en">· Weill Cornell Medicine, Cornell University</span><span data-lang="zh">· 康奈尔大学威尔医学院</span></span></div></li>
+    <li><span class="d">2021.02 – 2022.08</span><div><b><span data-lang="en">Research Associate</span><span data-lang="zh">研究员（Research Associate）</span></b> <span><span data-lang="en">· Department of Computer Science, University of Manchester</span><span data-lang="zh">· 曼彻斯特大学计算机系</span></span></div></li>
+    <li><span class="d">2019.11 – 2020.11</span><div><b><span data-lang="en">Visiting Ph.D. Student</span><span data-lang="zh">联合培养博士生</span></b> <span><span data-lang="en">· University of Montreal, with Jian-Yun Nie</span><span data-lang="zh">· 蒙特利尔大学，导师聂建云教授</span></span></div></li>
+    <li><span class="d">2014.09 – 2020.12</span><div><b><span data-lang="en">Ph.D., Computer Science</span><span data-lang="zh">博士，计算机科学</span></b> <span><span data-lang="en">· Wuhan University, with Min Peng</span><span data-lang="zh">· 武汉大学，导师彭敏教授</span></span></div></li>
+    <li><span class="d">2010.09 – 2014.07</span><div><b><span data-lang="en">B.E.</span><span data-lang="zh">学士</span></b> <span><span data-lang="en">· Jiangxi Normal University</span><span data-lang="zh">· 江西师范大学</span></span></div></li>
+  </ul>
+  <div class="cv" style="margin-top:36px">
+    <div class="card">
+      <h2><span data-lang="en">Grants</span><span data-lang="zh">科研项目</span></h2>
+      <ul class="tl" style="margin-top:14px">
+        <li><span class="d"></span><div><b><span data-lang="en">National High-level Young Talent Program (Overseas)</span><span data-lang="zh">国家高层次青年人才计划（海外）</span></b> <span><span data-lang="en">· PI</span><span data-lang="zh">· 主持</span></span></div></li>
+        <li><span class="d">2026 –</span><div><b><span data-lang="en">NSFC General Program</span><span data-lang="zh">国家自然科学基金面上项目</span></b> <span><span data-lang="en">· National Natural Science Foundation of China, PI</span><span data-lang="zh">· 主持</span></span></div></li>
+        <li><span class="d">2025</span><div><b><span data-lang="en">CCF–Tencent Rhino-Bird Fund</span><span data-lang="zh">CCF-腾讯犀牛鸟科研基金</span></b> <span><span data-lang="en">· PI</span><span data-lang="zh">· 主持</span></span></div></li>
+        <li><span class="d">2024 – 2028</span><div><b><span data-lang="en">NIH K99/R00 Pathway to Independence Award</span><span data-lang="zh">NIH K99/R00 青年独立研究者基金</span></b> <span><span data-lang="en">· PI, $835,034 · Reliable Question-Answering Frameworks for Clinical Decision Support using Domain-specific LLMs</span><span data-lang="zh">· 主持，83.5 万美元 · 基于领域大语言模型的可靠临床决策支持问答框架</span></span></div></li>
+      </ul>
+      <h2 style="margin-top:26px"><span data-lang="en">Awards</span><span data-lang="zh">荣誉奖励</span></h2>
+      <ul class="tl" style="margin-top:14px">
+        <li><span class="d"></span><div><b><span data-lang="en">Hubei Provincial Science and Technology Progress Award, 2nd Class</span><span data-lang="zh">湖北省科技进步二等奖</span></b></div></li>
+        <li><span class="d">2024</span><div><b><span data-lang="en">CCL Highlight English Paper Award</span><span data-lang="zh">CCL 亮点英文论文奖</span></b> <span><span data-lang="en">· Chinese Information Processing Society</span><span data-lang="zh">· 中国中文信息学会</span></span></div></li>
+        <li><span class="d">2021</span><div><b><span data-lang="en">Student Scholarship</span><span data-lang="zh">学生奖学金</span></b> <span>· The Web Conference (WWW)</span></div></li>
+        <li><span class="d">2020</span><div><b><span data-lang="en">Outstanding Graduate Student</span><span data-lang="zh">优秀研究生</span></b> <span><span data-lang="en">· Wuhan University</span><span data-lang="zh">· 武汉大学</span></span></div></li>
+        <li><span class="d">2019</span><div><b><span data-lang="en">Chinese Government Scholarship</span><span data-lang="zh">国家留学基金委奖学金</span></b></div></li>
+        <li><span class="d">2018</span><div><b><span data-lang="en">Leijun Scholarship</span><span data-lang="zh">雷军奖学金</span></b> <span><span data-lang="en">· Wuhan University</span><span data-lang="zh">· 武汉大学</span></span></div></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2><span data-lang="en">Service</span><span data-lang="zh">学术服务</span></h2>
+      <ul class="tl" style="margin-top:14px">
+        <li><span class="d"><span data-lang="en">Secretary</span><span data-lang="zh">秘书</span></span><div><span data-lang="en">ACL Special Interest Group on Financial Technology (SIG-FinTech); organizer of the SIG-FinTech × TFAI webinar series (2026–)</span><span data-lang="zh">ACL 金融科技特别兴趣小组（SIG-FinTech）；SIG-FinTech × TFAI 线上研讨会系列组织者（2026 起）</span></div></li>
+        <li><span class="d"><span data-lang="en">General Co-Chair</span><span data-lang="zh">大会联合主席</span></span><div>FinNLP-FNP-LLMFinLegal @ COLING 2025</div></li>
+        <li><span class="d"><span data-lang="en">Senior Area Chair</span><span data-lang="zh">资深领域主席</span></span><div>EACL 2025</div></li>
+        <li><span class="d"><span data-lang="en">Area Chair</span><span data-lang="zh">领域主席</span></span><div>LREC 2026 · NeurIPS 2025 · EMNLP 2025 · ACL 2025 · COLING 2025 · ACL 2023 · EMNLP 2023</div></li>
+        <li><span class="d"><span data-lang="en">Organizer</span><span data-lang="zh">评测组织</span></span><div><span data-lang="en">Shared tasks at BioNLP @ ACL 2023 and FinNLP-AgentScen @ IJCAI 2024, 200+ participating teams</span><span data-lang="zh">BioNLP @ ACL 2023、FinNLP-AgentScen @ IJCAI 2024 评测任务，累计 200+ 参赛队伍</span></div></li>
+        <li><span class="d"><span data-lang="en">Grant reviewer</span><span data-lang="zh">基金评审</span></span><div><span data-lang="en">The Royal Society, University Research Fellowships 2023</span><span data-lang="zh">英国皇家学会 University Research Fellowships 2023</span></div></li>
+      </ul>
+      <h3 style="margin-top:18px"><span data-lang="en">Reviewing</span><span data-lang="zh">审稿</span></h3>
+      <p>Nature Medicine · npj Digital Medicine · JAMIA · JBI · AMIA · ICLR · NeurIPS · ICML · ACL · EMNLP · NAACL · ARR · AAAI · KDD · WWW · SIGIR · TOIS · TNNLS · IPM · ACM Computing Surveys</p>
+    </div>
+    <div class="card">
+      <h2><span data-lang="en">Invited Talks</span><span data-lang="zh">特邀报告</span></h2>
+      <ul class="tl" style="margin-top:14px">
+        <li><span class="d">2025.09 · CCKS</span><div><span data-lang="en">Keynote, Medical Knowledge Graph Forum, CCKS 2025: Knowledge-Enhanced Large Language Models and Applications in Healthcare</span><span data-lang="zh">CCKS 2025 医疗知识图谱论坛主旨报告《医疗领域知识增强大语言模型与应用》</span></div></li>
+        <li><span class="d">2025.04 · MLNLP</span><div><span data-lang="en">30th MLNLP Symposium: Deploying Large Language Models in Vertical Domains: Benchmarks, Models, Agents, and Applications</span><span data-lang="zh">MLNLP 第三十次学术研讨会《面向垂直领域的大语言模型落地应用：基准、模型、智能体与应用》</span></div></li>
+        <li><span class="d">2024 · UBC</span><div><span data-lang="en">Me-LLaMA: Medical Foundation LLMs for Comprehensive Text Analysis and Beyond, University of British Columbia</span><span data-lang="zh">不列颠哥伦比亚大学：Me-LLaMA 医疗基础大语言模型</span></div></li>
+        <li><span class="d">2024 · Stanford</span><div><span data-lang="en">Me-LLaMA, Stanford MedAI</span><span data-lang="zh">斯坦福 MedAI：Me-LLaMA</span></div></li>
+        <li><span class="d">2024 · Yale</span><div><span data-lang="en">AI in Medicine Symposium, lightning talk</span><span data-lang="zh">耶鲁大学 AI in Medicine Symposium 闪电报告</span></div></li>
+        <li><span class="d">2023 · EBI</span><div><span data-lang="en">Keynote, EBI Workshop on ML for Text Mining: Biomedical Text Summarization, From Pre-trained to Large Language Models</span><span data-lang="zh">EBI 文本挖掘机器学习研讨会主旨报告：从预训练到大语言模型的生物医学文本摘要</span></div></li>
+        <li><span class="d">2023 · SUSTech</span><div><span data-lang="en">Global Computer Scientists Forum, Southern University of Science and Technology</span><span data-lang="zh">南方科技大学全球计算机科学家论坛</span></div></li>
+        <li><span class="d">2022 · Manchester</span><div><span data-lang="en">Pre-trained Language Models with Domain Knowledge for Biomedical Extractive Summarization</span><span data-lang="zh">曼彻斯特大学：融合领域知识的预训练模型与生物医学抽取式摘要</span></div></li>
+        <li><span class="d">2022 · Cornell</span><div><span data-lang="en">Automatic Biomedical Text Summarization with NLP, Weill Cornell Medicine</span><span data-lang="zh">康奈尔大学威尔医学院：基于 NLP 的生物医学文本自动摘要</span></div></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2><span data-lang="en">Teaching &amp; Students</span><span data-lang="zh">教学与学生</span></h2>
+      <ul class="tl" style="margin-top:14px">
+        <li><span class="d">2025 · Yale</span><div><span data-lang="en">CBB 574 Biomedical Natural Language Processing, guest lecturer</span><span data-lang="zh">耶鲁大学 CBB 574 生物医学自然语言处理，客座讲师</span></div></li>
+        <li><span class="d">2023 · NIH</span><div><span data-lang="en">BIOF39 Text Mining, guest lecturer</span><span data-lang="zh">NIH BIOF39 文本挖掘，客座讲师</span></div></li>
+      </ul>
+      <h3 style="margin-top:18px"><span data-lang="en">Ph.D. students</span><span data-lang="zh">博士生</span></h3>
+      <p><span data-lang="en">Jie Gong (2025) · Yihuai Xu (2025) · Baojie Qu (2026) · Ruiyu Zhang (2026)</span><span data-lang="zh">龚捷（2025 级）· 许艺怀（2025 级）· 曲保杰（2026 级）· 张睿宇（2026 级）</span></p>
+      <h3><span data-lang="en">Master's students</span><span data-lang="zh">硕士生</span></h3>
+      <p><span data-lang="en">Jun Yang (2025) · Keying Wu (2026) · Zhentao Li (2026) · Xiudong Chen (2026)</span><span data-lang="zh">杨俊（2025 级）· 吴可莹（2026 级）· 李震韬（2026 级）· 陈秀栋（2026 级）</span></p>
+      <h3><span data-lang="en">Co-supervised with Prof. Min Peng</span><span data-lang="zh">与彭敏教授联合指导</span></h3>
+      <p><span data-lang="en">Mengxi Xiao, Yanlin Song, Xiyang Huang (Ph.D.) · Enze Zhang (M.Sc.)</span><span data-lang="zh">肖梦溪、宋衍霖、黄希扬（博士）· 张恩泽（硕士）</span></p>
+      <h3><span data-lang="en">Co-supervised, Manchester and Yale</span><span data-lang="zh">联合指导（曼彻斯特大学、耶鲁大学）</span></h3>
+      <p><span data-lang="en">Kailai Yang, Chenghan Yuan, Zheheng Luo, Jennifer Amy Bishop (Manchester) · Zhiyuan Cao, Xinyu Zhou (Yale)</span><span data-lang="zh">杨开来、Chenghan Yuan、Zheheng Luo、Jennifer Amy Bishop（曼彻斯特）· Zhiyuan Cao、Xinyu Zhou（耶鲁）</span></p>
+      <p><a href="https://clain.org/#/people"><span data-lang="en">All lab members →</span><span data-lang="zh">实验室全体成员 →</span></a></p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="sh"><h2><span class="zh"><span data-lang="en">联 系</span><span data-lang="zh">Contact</span></span><span data-lang="en">Contact</span><span data-lang="zh">联系方式</span></h2></div>
+  <div class="about">
+    <div>
+      <p data-lang="en">School of Artificial Intelligence, Wuhan University<br>Luojia Hill, Wuchang District, Wuhan, Hubei 430072, China</p>
+      <p data-lang="zh">湖北省武汉市武昌区珞珈山 武汉大学人工智能学院，430072</p>
+      <p><a href="mailto:xqq.sincere@gmail.com">xqq.sincere@gmail.com</a></p>
+      <div class="cta"><a class="btn" href="https://github.com/Qianqian-Xie">GitHub</a><a class="btn" href="https://jszy.whu.edu.cn/xieqianqian/zh_CN/index.htm"><span data-lang="en">WHU faculty page</span><span data-lang="zh">武汉大学教师主页</span></a><a class="btn" href="https://clain.org/#/people"><span data-lang="en">CLAIN people page</span><span data-lang="zh">CLAIN 成员页</span></a></div>
+    </div>
+  </div>
+</section>
+</div>
+
+<footer><div class="c"><span>© 2026 Qianqian Xie · 谢倩倩</span><span><span data-lang="en">Wuhan University · Cognitive Language and Information Lab</span><span data-lang="zh">武汉大学 · 认知语言与信息实验室</span></span></div></footer>
+
+<script src="data/pubs.js"></script>
+<script>
+/* publications */
+const root=document.documentElement;
+const PUBS=window.PUBS||[];const STATS=window.STATS||{};
+const list=document.getElementById('publist'),count=document.getElementById('count'),q=document.getElementById('q');
+let mode='top';
+for(const [k,id] of [['n','s-n'],['citations','s-c'],['h','s-h'],['i10','s-i']]){if(STATS[k]!=null)document.getElementById(id).textContent=Number(STATS[k]).toLocaleString()}
+if(STATS.date)document.querySelectorAll('.s-d').forEach(e=>e.textContent=STATS.date);
+const TOP=new Set([...PUBS].sort((a,b)=>b.c-a.c).slice(0,12).map(p=>p.u));
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function render(){
+  const zh=root.getAttribute('data-l')==='zh';
+  q.placeholder=zh?'搜索标题、作者、期刊会议':'Search title, author, venue';
+  const term=q.value.trim().toLowerCase();
+  let items=PUBS.filter(p=>{
+    if(mode==='top'&&!TOP.has(p.u))return false;
+    if(mode==='recent'&&!(p.y==='2025'||p.y==='2026'))return false;
+    return !term||(p.t+' '+p.a.join(' ')+' '+p.v).toLowerCase().includes(term)});
+  items.sort((a,b)=>(b.y||'0').localeCompare(a.y||'0')||b.c-a.c);
+  count.textContent=(zh?'显示 ':'')+items.length+(zh?' / ':' of ')+PUBS.length;
+  const by={};items.forEach(p=>{const y=p.y||(zh?'其他':'n.d.');(by[y]=by[y]||[]).push(p)});
+  const years=Object.keys(by).sort((a,b)=>b.localeCompare(a));
+  list.innerHTML=years.map(y=>`<div class="year"><div class="y">${esc(y)}</div><div>`+by[y].map(p=>{
+    const au=p.a.map(n=>/^Q Xie$/.test(n)?`<span class="me">${esc(n)}</span>`:esc(n)).join(', ');
+    const pre=/arXiv|Preprint|medRxiv|bioRxiv|SSRN/i.test(p.v);
+    return `<div class="pub"><div><div class="t"><a href="${esc(p.u)}">${esc(p.t)}</a></div><div class="au">${au}</div><div class="meta"><span class="tag${pre?' pre':''}">${esc(p.v)}</span></div></div><div class="cit">${p.c?`<b>${p.c}</b> ${zh?'引用':'citations'}`:''}</div></div>`}).join('')+`</div></div>`).join('')||`<p style="color:var(--mute)">${zh?'没有匹配的论文。':'No matching papers.'}</p>`;
+}
+document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{mode=b.dataset.f;document.querySelectorAll('.chip').forEach(x=>x.classList.toggle('on',x===b));render()}));
+q.addEventListener('input',()=>{if(q.value&&mode!=='all'){mode='all';document.querySelectorAll('.chip').forEach(x=>x.classList.toggle('on',x.dataset.f==='all'))}render()});
+/* language */
+function setLang(l){root.setAttribute('data-l',l);root.lang=l==='zh'?'zh-CN':'en';try{localStorage.setItem('lang',l)}catch(e){};render()}
+let saved=null;try{saved=localStorage.getItem('lang')}catch(e){}
+setLang(saved||((navigator.language||'').toLowerCase().startsWith('zh')?'zh':'en'));
+document.getElementById('lang').addEventListener('click',()=>setLang(root.getAttribute('data-l')==='zh'?'en':'zh'));
+
+/* petals */
+(function(){
+  const cv=document.getElementById('petals'),ctx=cv.getContext('2d');
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let W,H,P=[];
+  function color(){return getComputedStyle(root).getPropertyValue('--petal').trim()||'#F2B8C6'}
+  function size(){const r=cv.parentElement.getBoundingClientRect();W=r.width;H=r.height;cv.width=W*devicePixelRatio;cv.height=H*devicePixelRatio;ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0)}
+  function mk(y){return {x:Math.random()*W,y:y??-20,r:4+Math.random()*5,vx:.15+Math.random()*.25,vy:.25+Math.random()*.35,a:Math.random()*6.28,va:(Math.random()-.5)*.02,o:.35+Math.random()*.4}}
+  function petal(p){ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.a);ctx.globalAlpha=p.o;ctx.fillStyle=color();ctx.beginPath();ctx.moveTo(0,-p.r);ctx.bezierCurveTo(p.r,-p.r,p.r,p.r*.6,0,p.r);ctx.bezierCurveTo(-p.r,p.r*.6,-p.r,-p.r,0,-p.r);ctx.fill();ctx.restore()}
+  function draw(){ctx.clearRect(0,0,W,H);P.forEach(petal)}
+  function step(){P.forEach(p=>{p.x+=p.vx+Math.sin(p.y/40)*.2;p.y+=p.vy;p.a+=p.va;if(p.y>H+20||p.x>W+20)Object.assign(p,mk())});draw();requestAnimationFrame(step)}
+  size();for(let i=0;i<22;i++)P.push(mk(Math.random()*H));
+  addEventListener('resize',size);
+  if(reduce)draw();else step();
+})();
+
+/* active nav */
+const links=[...document.querySelectorAll('#menu a')];
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-30% 0px -60% 0px'});
+document.querySelectorAll('section').forEach(s=>io.observe(s));
+</script>
+
+</body>
+</html>
